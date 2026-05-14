@@ -3,246 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Talal Centre | AC, Fridge & Refrigerator Maintenance in Jeddah</title>
-  <meta name="description" content="Talal Centre for Cooling in Jeddah, Saudi Arabia. AC, fridge, refrigerator, washing machine and home appliance maintenance with fast service." />
-  <style>
-    :root {
-      --brand-blue: #1f3c9b;
-      --brand-orange: #ff7a1a;
-      --dark: #121826;
-      --light: #f8fafc;
-      --text: #1e293b;
-      --shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  <title>Talal Centre Jeddah | AC, Refrigerator & Home Appliance Repair</title>
+  <meta name="description" content="Talal Centre (مركز طلال للتبريد) provides AC maintenance, AC repair, refrigerator repair, washing machine and oven service in Jeddah with fast home visits and emergency maintenance." />
+  <meta name="keywords" content="AC maintenance Jeddah, AC repair Jeddah, split AC service, window AC service, refrigerator repair Jeddah, washing machine repair Jeddah, oven repair Jeddah" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Talal Centre",
+      "alternateName": "مركز طلال للتبريد",
+      "url": "https://talalcentre.com",
+      "telephone": "+966531624801",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jeddah",
+        "addressCountry": "SA"
+      },
+      "areaServed": "Jeddah",
+      "priceRange": "$$",
+      "sameAs": ["https://wa.me/966531624801"],
+      "description": "AC maintenance, AC repair, AC cleaning, refrigerator repair and appliance maintenance in Jeddah."
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.6;
-    }
-
-    .container { width: min(1120px, 92%); margin-inline: auto; }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.92);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-
-    .topbar-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 12px 0;
-    }
-
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand h1 { margin: 0; font-size: 1.2rem; color: var(--brand-blue); }
-    .brand small { display: block; color: #475569; }
-
-    .lang-switch { display: flex; gap: 8px; }
-    .lang-switch button {
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      padding: 8px 14px;
-      font-weight: 700;
-      cursor: pointer;
-      background: #fff;
-      color: var(--dark);
-    }
-    .lang-switch button.active { background: var(--brand-blue); color: #fff; border-color: var(--brand-blue); }
-
-    .nav { display: flex; flex-wrap: wrap; gap: 16px; }
-    .nav a { color: var(--dark); text-decoration: none; font-weight: 600; }
-
-    .hero {
-      min-height: 80vh;
-      color: #fff;
-      position: relative;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(120deg, rgba(8,20,54,0.85), rgba(31,60,155,0.78)),
-      url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
-    }
-
-    .hero-card {
-      width: min(900px, 92%);
-      background: rgba(0, 0, 0, 0.38);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 18px;
-      padding: clamp(1.2rem, 3.5vw, 2.2rem);
-      box-shadow: var(--shadow);
-    }
-
-    h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 4vw, 2.8rem); }
-    .hero p { margin: 0 0 18px; color: #e2e8f0; }
-
-    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      text-decoration: none;
-      border-radius: 10px;
-      padding: 12px 18px;
-      font-weight: 700;
-      border: 2px solid transparent;
-    }
-    .btn-call { background: var(--brand-orange); color: #fff; }
-    .btn-wa { background: #25d366; color: #073b1b; }
-    .btn-outline { border-color: #fff; color: #fff; }
-
-    section { padding: 70px 0; }
-    .section-title { font-size: 2rem; margin: 0 0 20px; color: var(--brand-blue); }
-
-    .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(30, 41, 59, 0.09);
-      padding: 20px;
-      border-top: 4px solid var(--brand-orange);
-    }
-
-    footer {
-      background: var(--dark);
-      color: #cbd5e1;
-      padding: 30px 0;
-      margin-top: 30px;
-    }
-    footer a { color: #fff; text-decoration: none; }
-
-    [data-lang] { display: none; }
-    [data-lang].show { display: block; }
-
-    body.ar { direction: rtl; font-family: Tahoma, Arial, sans-serif; }
-    body.ar .topbar-wrap { flex-direction: row-reverse; }
-    body.ar .nav { justify-content: flex-end; }
-
-    @media (max-width: 760px) {
-      .topbar-wrap { flex-direction: column; align-items: stretch; }
-      .brand { justify-content: space-between; }
-      .nav { justify-content: center; }
-      .lang-switch { justify-content: flex-end; }
-    }
-  </style>
+  </script>
 </head>
 <body>
   <header class="topbar">
-    <div class="container topbar-wrap">
-      <div class="brand">
-        <div>
-          <h1>Talal Centre</h1>
-          <small>For Cooling - Jeddah, Saudi Arabia</small>
-        </div>
-      </div>
-
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
+    <div class="container header-top">
+      <p class="top-contact" data-i18n="topContact">Call now for same-day service in Jeddah: <a href="tel:+966531624801">0531624801</a></p>
       <div class="lang-switch" aria-label="Language Switcher">
-        <button id="enBtn" class="active" type="button">English</button>
-        <button id="arBtn" type="button">العربية</button>
+        <button type="button" data-lang-btn="en" class="active">English</button>
+        <button type="button" data-lang-btn="ar">العربية</button>
+      </div>
+    </div>
+    <div class="container header-main">
+      <a href="#home" class="brand">
+        <span class="brand-en">Talal Centre</span>
+        <span class="brand-ar">مركز طلال للتبريد</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#why-us" data-i18n="navWhy">Why Us</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#testimonials" data-i18n="navTestimonials">Testimonials</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+966531624801" class="btn btn-call" data-i18n="callNow">Call Now</a>
+        <a href="https://wa.me/966531624801" class="btn btn-wa" target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp</a>
       </div>
     </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-card">
-        <div data-lang="en" class="show">
-          <h2>Professional AC & Refrigerator Maintenance in Jeddah</h2>
-          <p>Fast home service for AC units, fridges, refrigerators, freezers and washing machines. Same-day support available.</p>
-        </div>
-        <div data-lang="ar">
-          <h2>صيانة احترافية للمكيفات والثلاجات في جدة</h2>
-          <p>خدمة منزلية سريعة للمكيفات والثلاجات والفريزرات والغسالات مع دعم في نفس اليوم.</p>
-        </div>
-
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 data-i18n="heroTitle">Trusted AC & Appliance Repair in Jeddah — Fast Home Service</h1>
+        <p data-i18n="heroText">Talal Centre delivers professional AC maintenance, refrigerator cooling repair, washing machine repair, and emergency home maintenance across Jeddah.</p>
         <div class="cta-row">
-          <a class="btn btn-call" href="tel:+966531624801">📞 Call: 0531624801</a>
-          <a class="btn btn-wa" href="https://wa.me/966531624801" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-outline" href="#services">View Services</a>
+          <a href="tel:+966531624801" class="btn btn-call">📞 0531624801</a>
+          <a href="https://wa.me/966531624801" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="badges">
+          <span data-i18n="badge1">Fast service in Jeddah</span>
+          <span data-i18n="badge2">Home visit technicians</span>
+          <span data-i18n="badge3">Experienced maintenance team</span>
         </div>
       </div>
     </section>
 
-    <section id="services" class="container">
-      <h3 class="section-title show" data-lang="en">Our Services</h3>
-      <h3 class="section-title" data-lang="ar">خدماتنا</h3>
-      <div class="grid">
-        <article class="card"><strong class="show" data-lang="en">AC Repair & Gas Refill</strong><strong data-lang="ar">تصليح المكيفات وتعبئة الغاز</strong></article>
-        <article class="card"><strong class="show" data-lang="en">Fridge & Refrigerator Maintenance</strong><strong data-lang="ar">صيانة الثلاجات والبرادات</strong></article>
-        <article class="card"><strong class="show" data-lang="en">Freezer Cooling Issues</strong><strong data-lang="ar">حل مشاكل تبريد الفريزر</strong></article>
-        <article class="card"><strong class="show" data-lang="en">Washing Machine Checkup</strong><strong data-lang="ar">فحص وصيانة الغسالات</strong></article>
-        <article class="card"><strong class="show" data-lang="en">Emergency Home Visit</strong><strong data-lang="ar">زيارة منزلية طارئة</strong></article>
-        <article class="card"><strong class="show" data-lang="en">Maintenance Contracts</strong><strong data-lang="ar">عقود صيانة دورية</strong></article>
+    <section id="services" class="section container">
+      <h2 data-i18n="servicesTitle">Complete Home Maintenance Services</h2>
+      <p class="section-intro" data-i18n="servicesIntro">We provide reliable repair and maintenance solutions for cooling and home appliances with original spare parts when needed.</p>
+      <div class="cards">
+        <article class="card"><h3 data-i18n="service1Title">AC Maintenance & Repair</h3><p data-i18n="service1Text">Compressor checks, gas refill, leak repair, thermostat troubleshooting, and cooling performance restoration.</p></article>
+        <article class="card"><h3 data-i18n="service2Title">AC Cleaning Service</h3><p data-i18n="service2Text">Deep indoor/outdoor unit cleaning, filter sanitization, drain line cleaning, and odor removal for healthier airflow.</p></article>
+        <article class="card"><h3 data-i18n="service3Title">AC Installation</h3><p data-i18n="service3Text">Safe installation and relocation for split and window AC systems with proper electrical and drainage setup.</p></article>
+        <article class="card"><h3 data-i18n="service4Title">Refrigerator Maintenance</h3><p data-i18n="service4Text">Fridge cooling repair, thermostat replacement, gas recharge, door seal fixes, and frost issues troubleshooting.</p></article>
+        <article class="card"><h3 data-i18n="service5Title">Washing Machine Repair</h3><p data-i18n="service5Text">Motor, drum, water inlet/outlet, spin cycle and control board diagnostics for top-load and front-load machines.</p></article>
+        <article class="card"><h3 data-i18n="service6Title">Stove & Oven Repair</h3><p data-i18n="service6Text">Ignition repair, burner issues, temperature control fixes, and safe testing for gas and electric ovens.</p></article>
       </div>
     </section>
 
-    <section id="about" class="container">
-      <h3 class="section-title show" data-lang="en">Why Choose Talal Centre?</h3>
-      <h3 class="section-title" data-lang="ar">لماذا تختار مركز طلال؟</h3>
-      <p class="show" data-lang="en">Experienced technicians, clear pricing, fast response and trusted service in Jeddah. We focus on quality work and customer satisfaction.</p>
-      <p data-lang="ar">فنيون ذوو خبرة، أسعار واضحة، استجابة سريعة وخدمة موثوقة في جدة. نركز على جودة العمل ورضا العملاء.</p>
+    <section class="section alt" id="why-us">
+      <div class="container">
+        <h2 data-i18n="whyTitle">Why Jeddah Residents Choose Talal Centre</h2>
+        <div class="cards three">
+          <article class="card"><h3 data-i18n="why1Title">Rapid Response</h3><p data-i18n="why1Text">Same-day appointment availability with emergency maintenance support for urgent breakdowns.</p></article>
+          <article class="card"><h3 data-i18n="why2Title">Skilled Technicians</h3><p data-i18n="why2Text">Experienced team specialized in split AC, window AC, refrigerators, washers, stoves, and ovens.</p></article>
+          <article class="card"><h3 data-i18n="why3Title">Transparent Pricing</h3><p data-i18n="why3Text">Clear quotations before work starts, with honest recommendations and quality-focused service.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="container">
-      <h3 class="section-title show" data-lang="en">Contact</h3>
-      <h3 class="section-title" data-lang="ar">اتصل بنا</h3>
-      <p><strong>Talal Centre for Cooling</strong> — Jeddah, Saudi Arabia</p>
-      <p>Phone / WhatsApp: <a href="tel:+966531624801">0531624801</a></p>
+    <section class="section container" id="about">
+      <h2 data-i18n="aboutTitle">About Talal Centre</h2>
+      <p data-i18n="aboutText">Talal Centre / مركز طلال للتبريد is a Jeddah-based maintenance business focused on reliable appliance repair and customer satisfaction. We serve homes and small businesses with practical solutions, respectful service, and ongoing technical support.</p>
+    </section>
+
+    <section class="section alt" id="areas">
+      <div class="container">
+        <h2 data-i18n="areasTitle">Service Areas in Jeddah</h2>
+        <p data-i18n="areasText">We cover North, South, East, and Central Jeddah including Al Rawdah, Al Salamah, Al Safa, Al Naseem, Al Hamra, Al Aziziyah, and nearby districts.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="testimonials">
+      <h2 data-i18n="testimonialsTitle">Customer Testimonials</h2>
+      <div class="cards three">
+        <article class="card"><p data-i18n="test1">“Excellent AC cleaning and fast response. The technician explained everything clearly.”</p><strong>- Ahmed, Jeddah</strong></article>
+        <article class="card"><p data-i18n="test2">“They fixed our refrigerator cooling issue the same day. Professional and punctual.”</p><strong>- Sara, Jeddah</strong></article>
+        <article class="card"><p data-i18n="test3">“Best maintenance team for home appliances. Fair price and quality work.”</p><strong>- Khalid, Jeddah</strong></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="container">
+        <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
+        <div class="faq-item"><h3 data-i18n="faq1q">Do you provide emergency maintenance?</h3><p data-i18n="faq1a">Yes, we provide emergency maintenance in Jeddah based on technician availability.</p></div>
+        <div class="faq-item"><h3 data-i18n="faq2q">Do you repair both split and window AC?</h3><p data-i18n="faq2a">Yes, we service split AC and window AC units including maintenance, cleaning, and repair.</p></div>
+        <div class="faq-item"><h3 data-i18n="faq3q">How can I book a home visit?</h3><p data-i18n="faq3a">Call us at 0531624801 or message us on WhatsApp to schedule a home visit quickly.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2 data-i18n="contactTitle">Contact Talal Centre</h2>
+      <p data-i18n="contactText">Need AC repair, refrigerator maintenance, or appliance service in Jeddah? Contact us now.</p>
+      <ul class="contact-list">
+        <li><strong data-i18n="phoneLabel">Phone:</strong> <a href="tel:+966531624801">0531624801</a></li>
+        <li><strong data-i18n="waLabel">WhatsApp:</strong> <a href="https://wa.me/966531624801" target="_blank" rel="noopener">+966531624801</a></li>
+        <li><strong data-i18n="locationLabel">Location:</strong> Jeddah, Saudi Arabia</li>
+        <li><strong data-i18n="domainLabel">Website:</strong> talalcentre.com</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p class="show" data-lang="en">© <span id="year"></span> Talal Centre. All rights reserved.</p>
-      <p data-lang="ar">© <span class="year-ar"></span> مركز طلال. جميع الحقوق محفوظة.</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>Talal Centre | مركز طلال للتبريد</h3>
+        <p data-i18n="footerDesc">Professional cooling and appliance maintenance services in Jeddah with quick support and trusted technicians.</p>
+      </div>
+      <div>
+        <h4 data-i18n="quickLinks">Quick Links</h4>
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div>
+        <h4 data-i18n="servicesLinks">Service Links</h4>
+        <a href="#services" data-i18n="service1Title">AC Maintenance & Repair</a>
+        <a href="#services" data-i18n="service4Title">Refrigerator Maintenance</a>
+        <a href="#services" data-i18n="service5Title">Washing Machine Repair</a>
+      </div>
+      <div>
+        <h4 data-i18n="contactTitle">Contact</h4>
+        <a href="tel:+966531624801">0531624801</a>
+        <a href="https://wa.me/966531624801" target="_blank" rel="noopener">WhatsApp</a>
+        <p>Jeddah, Saudi Arabia</p>
+        <p>talalcentre.com</p>
+      </div>
     </div>
+    <p class="copyright">© <span id="year"></span> Talal Centre / مركز طلال للتبريد. <span data-i18n="rights">All rights reserved.</span></p>
   </footer>
 
-  <script>
-    const enBtn = document.getElementById('enBtn');
-    const arBtn = document.getElementById('arBtn');
-    const langNodes = document.querySelectorAll('[data-lang]');
-    const year = new Date().getFullYear();
-    document.getElementById('year').textContent = year;
-    document.querySelector('.year-ar').textContent = year;
+  <div class="mobile-sticky">
+    <a href="tel:+966531624801" class="btn btn-call">Call 0531624801</a>
+    <a href="https://wa.me/966531624801" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 
-    function setLanguage(lang) {
-      langNodes.forEach((node) => node.classList.remove('show'));
-      document.querySelectorAll(`[data-lang="${lang}"]`).forEach((node) => node.classList.add('show'));
-      if (lang === 'ar') {
-        document.body.classList.add('ar');
-        document.documentElement.lang = 'ar';
-        document.documentElement.dir = 'rtl';
-        arBtn.classList.add('active');
-        enBtn.classList.remove('active');
-      } else {
-        document.body.classList.remove('ar');
-        document.documentElement.lang = 'en';
-        document.documentElement.dir = 'ltr';
-        enBtn.classList.add('active');
-        arBtn.classList.remove('active');
-      }
-    }
-
-    enBtn.addEventListener('click', () => setLanguage('en'));
-    arBtn.addEventListener('click', () => setLanguage('ar'));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
